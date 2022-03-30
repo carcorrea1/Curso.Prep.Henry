@@ -13,7 +13,7 @@ const nuevoBool = true
 const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * 4 === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === 1;
@@ -72,7 +72,7 @@ function sonIguales(x, y) {
   }
 }
   
-}
+
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
@@ -91,7 +91,7 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num<90) {
+  if (num < 90) {
     return true;
   } else {
     return false;
@@ -104,7 +104,7 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(num>50) {
+  if (num > 50) {
     return true;
   } else {
     return false;
@@ -159,21 +159,28 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return Math.pow (num, exponent);
+  return Math.pow(num, exponent);
   
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return Math.round (num);
+  var resto = num % 1;
+  var entero = num - resto;
+  if (resto >= 0.5) {
+    return entero + 1;
+  } else {
+ return entero; 
+  }
+  return Math.round(num);
   
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.ceil (num);
+  return Math.ceil(num);
   
 }
 
@@ -195,7 +202,7 @@ function esPositivo(numero) {
   else if (numero > 0) {
    return "Es positivo";
  } 
- else (numero < 0) {
+ else {
    return "Es negativo";
  }
 }
@@ -251,7 +258,6 @@ function areaDelTriangulo(base, altura){
 
 
 function deEuroAdolar(euro){
-  //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
   return euro * 1.2
@@ -274,7 +280,7 @@ function esVocal(letra){
   
   }
   
-}
+
 
 
 
