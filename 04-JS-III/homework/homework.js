@@ -258,7 +258,7 @@ function continueStatement(numero) {
 
   }
 }
-return array;
+return Array;
 }
 
 
